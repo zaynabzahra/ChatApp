@@ -1,3 +1,3 @@
 # ChatApp
 ChatApp using Firebase Backend 
-![Screenshot](screenshot.PNG)
+![Screenshot](firebase-code/screenshot.PNG)
