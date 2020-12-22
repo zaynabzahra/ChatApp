@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="/chatapp.css">
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="user-options">
+            <div>Hi, <span id="name"></span></div>
+            <div id="change-name">change name</div>
+        </div>
+    </div>
+
+    <form id="message-form">
+        <input type="text" id="message-input" placeholder="message" required>
+        <button class="orange-button">send</button>
+    </form>
+
+    <div id="messages"></div> 
+
+    <button id="clear" class="purple-button">Clear All Messages</button>
+   
+
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>   
+<script src="/chatapp.js"></script>
+</body>
+</html>
